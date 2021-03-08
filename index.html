@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script >
+		x=11;
+	</script>
+	<center><h1 class="titulo">Cuenta regresiva</h1></center>
+	<link rel="stylesheet" type="text/css" href="estilo1.css">
+</head>
+<body onload="primero()" >
+	<div class="cuadro"></div>
+		<input type="text" name="mostrar" id="mostrar" class="mostrar">
+<script >
+	function cuarto(){
+			document.getElementById("mostrar").value="FIN";
+	}
+	function tercero(){
+			clearInterval(control2);
+	setTimeout(segundo,1000);
+	}
+
+	function segundo(){
+				x=x-1;
+if(x>=0){
+console.log(x)
+	document.getElementById("mostrar").value=x;
+
+
+	    control2=setInterval(tercero,1000);
+	}
+	else
+	{
+		
+
+ control4=setInterval(cuarto,0);
+	}
+}
+
+
+function primero(){
+		document.getElementById("mostrar").value="HOLA";
+			setTimeout(segundo,1000);
+}
+</script>
+
+</html>  
